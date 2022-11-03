@@ -1,15 +1,17 @@
-//============================================================================
-// Name        : FirstProject.cpp
-// Author      : 
-// Version     :
-// Copyright   : Your copyright notice
-// Description : Hello World in C++, Ansi-style
-//============================================================================
-
 #include <iostream>
-using namespace std;
+#define G 9.80665
+float findX(float t) {
+	return 0.5*G*t*t;
+}
 
 int main() {
-	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	float t;
+	std::cin>>t;
+	float x= findX(t);
+	std::cout <<x<<std::endl;
+	
+	
 	return 0;
+
+
 }
